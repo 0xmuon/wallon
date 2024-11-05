@@ -40,10 +40,13 @@ function checkBalance(){
     document.getElementById("center").style.display="";
 
     const provider = new  ethers.providers.JsonRpcProvider("");
-    coonst signer=provider.getSigner();
+    const signer=provider.getSigner();
     console.log(signer);
     const address = document.getElementById("address").value;
     provider.getBalance(address).then((balance) => {
         const balanceInEth=ethers.utils.formatEther(balance);
-        document.getElementById("check_balance").innerText='your balance: ${balanceInEth} MATIC'
-    }
+        document.getElementById("check_balance").innerText='your balance: ${balanceInEth} MATIC');
+        console.log('balance: ${balanceInEth} ETH');
+        document.getElementById("center").style.display="none";
+    });
+}
