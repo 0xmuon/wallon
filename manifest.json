@@ -8,10 +8,10 @@
         "default_icon":""
     },
     "icons":{
-        "16":"",
-        "32":"",
-        "48":"",
-        "128":""
+        "16":"./wallon-logo.png",
+        "32":"./wallon-logo.png",
+        "48":"./wallon-logo.png",
+        "128":"./wallon-logo.png"
     },
     "permissions":["tabs","bookmarks","unlimitedStorage","nativeMessaging"]
 }
